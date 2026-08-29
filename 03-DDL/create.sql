@@ -7,3 +7,10 @@ CREATE TABLE courses (
 
 SHOW TABLES;
 DESCRIBE courses;
+
+CREATE TABLE courses (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    course_code VARCHAR(50),
+    course_name VARCHAR(100),
+    credit INT
+)
