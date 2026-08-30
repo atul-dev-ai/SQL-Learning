@@ -1,4 +1,5 @@
-
+-- LIMIT = koto gula row nibo.
+-- OFFSET = shurute koto gula row badh dibo.
 SELECT * FROM employees
 ORDER BY salary DESC
 LIMIT 3;
