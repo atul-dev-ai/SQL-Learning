@@ -42,3 +42,24 @@ JOIN departments d
 ON d.id = e.department_id
 WHERE salary > 40000 AND d.name = 'Finance';
 
+SELECT d.name 
+FROM departments d;
+
+SELECT e.name 
+FROM employees e
+JOIN departments d 
+ON d.id = e.department_id;
+
+SELECT
+    d.id AS department_id,
+    d.name AS department_name,
+    e.name AS employee_name,
+    e.id AS employee_id,
+    e.salary AS employee_salary,
+    e.email AS employee_email
+FROM employees e
+LEFT JOIN departments d
+ON d.id = e.department_id;
+
+SELECT
+    
