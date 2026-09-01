@@ -25,3 +25,19 @@ LEFT JOIN employees e
 ON d.id = e.department_id
 WHERE e.id IS NULL;
 
+
+SELECT
+    e.name AS employee_name,
+    d.name AS department_name
+FROM employees e 
+JOIN departments d 
+ON d.id = e.department_id
+WHERE d.name = 'Software';
+
+SELECT
+    e.name AS employee_name,
+    d.name AS employee_name
+FROM employees e 
+JOIN departments d 
+ON d.id = e.department_id
+WHERE salary > 40000;
