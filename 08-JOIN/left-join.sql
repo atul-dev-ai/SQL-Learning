@@ -69,3 +69,60 @@ JOIN departments d
 on e.department_id = d.id
 WHERE d.name = 'Software'
 ORDER BY e.salary DESC;
+
+--task 1
+SELECT
+    e.name AS employee_name,
+    d.name AS department_name
+FROM departments d 
+JOIN employees e 
+ON d.id = e.department_id;
+
+SELECT
+    e.name AS employee_name,
+    e.email,
+    e.salary,
+    d.name AS department_name
+FROM departments d 
+JOIN employees e 
+ON d.id = e.department_id;
+
+-- task 3
+SELECT
+    d.name AS department_name,
+    e.name AS employee_name
+FROM departments d 
+JOIN employees e 
+ON d.id = e.department_id
+WHERE d.name = 'Finance';
+
+--task 4
+SELECT
+    e.name AS employee_name,
+    e.salary,
+    d.name AS department
+FROM employees e 
+JOIN departments d 
+ON d.id = e.department_id
+WHERE e.salary BETWEEN 40000 AND 50000;
+
+--task 5
+SELECT
+    e.name AS employee_name,
+    d.name AS department_name,
+    e.salary
+FROM employees e 
+JOIN departments d 
+ON d.id = e.department_id
+ORDER BY e.salary DESC;
+
+--task 6
+SELECT
+    e.name AS employee_name,
+    e.salary,
+    d.name AS department_name
+FROM employees e 
+JOIN departments d 
+ON d.id = e.department_id
+WHERE d.name = 'Software' AND salary > 40000;
+
