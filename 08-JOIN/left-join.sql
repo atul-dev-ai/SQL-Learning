@@ -41,3 +41,4 @@ FROM employees e
 JOIN departments d 
 ON d.id = e.department_id
 WHERE salary > 40000 AND d.name = 'Finance';
+
