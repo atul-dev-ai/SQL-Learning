@@ -124,5 +124,6 @@ SELECT
 FROM employees e 
 JOIN departments d 
 ON d.id = e.department_id
-WHERE d.name = 'Software' AND salary > 40000;
+WHERE d.name = 'Software' 
+AND e.salary > 40000;
 
