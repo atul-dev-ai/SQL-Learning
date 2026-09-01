@@ -62,4 +62,10 @@ LEFT JOIN departments d
 ON d.id = e.department_id;
 
 SELECT
-    
+    e.name AS employee_name,
+    d.name AS department_name
+FROM employees e 
+JOIN departments d 
+on e.department_id = d.id
+WHERE d.name = 'Software'
+ORDER BY e.salary DESC;
