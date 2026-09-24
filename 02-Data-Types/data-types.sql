@@ -1,5 +1,5 @@
+-- Active: 1787999216968@@127.0.0.1@3306@coachingmanagement
 USE coachingmanagement
-
 CREATE TABLE datatype_practice (
     id INT,
     name VARCHAR(100),
