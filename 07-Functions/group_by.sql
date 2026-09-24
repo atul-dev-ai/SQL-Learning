@@ -1,3 +1,4 @@
+-- Active: 1787999216968@@127.0.0.1@3306@coachingmanagement
 SELECT department, COUNT(*)
 FROM employees
 GROUP BY department;
