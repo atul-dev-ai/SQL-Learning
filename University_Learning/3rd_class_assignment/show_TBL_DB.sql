@@ -1,0 +1,6 @@
+
+SHOW TABLES;
+
+SHOW DATABASES;
+
+DESCRIBE students;
