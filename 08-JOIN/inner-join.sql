@@ -1,3 +1,4 @@
+-- Active: 1787999216968@@127.0.0.1@3306@coachingmanagement
 SELECT d.name AS department, e.name AS employee
 FROM departments d
     LEFT JOIN employees e ON d.id = e.department_id
@@ -98,3 +99,11 @@ SELECT
 FROM departments d JOIN employees e ON d.id = e.department_id
 GROUP BY d.id, d.name
 HAVING AVG(e.salary) > 40000;
+
+SELECT * FROM
+employees
+WHERE salary > (
+    SELECT AVG(salary)
+    FROM employees
+);
+
