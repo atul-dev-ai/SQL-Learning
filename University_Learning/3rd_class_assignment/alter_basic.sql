@@ -1,7 +1,8 @@
 
 ALTER TABLE students
-ADD phone VARCHAR(15),
-ADD address VARCHAR(100),
-ADD email VARCHAR(100) AFTER phone;
+ADD phone VARCHAR(20);
 
-DESCRIBE students;
+ALTER TABLE students
+ADD address VARCHAR(200);
+
+SELECT * FROM students;
