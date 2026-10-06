@@ -1,5 +1,7 @@
 
-ALTER TABLE students ADD father_name VARCHAR(150);
-ALTER TABLE students MODIFY father_name VARCHAR(100);
+ALTER TABLE students
+MODIFY name VARCHAR(150) NOT NULL;
 
-ALTER TABLE students DROP COLUMN father_name;
+ALTER TABLE students
+MODIFY email VARCHAR(150) NOT NULL;
+DESCRIBE students;

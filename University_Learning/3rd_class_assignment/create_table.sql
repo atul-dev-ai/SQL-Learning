@@ -1,10 +1,15 @@
--- Active: 1787999216968@@127.0.0.1@3306@atul
-USE atul;
+-- Active: 1787999216968@@127.0.0.1@3306@cis22
+
 CREATE TABLE students (
-    id INT PRIMARY KEY,
-    name VARCHAR(50),
-    age INT,
-    dept VARCHAR(20),
-    gender VARCHAR(10),
-    cgpa FLOAT
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100),
+    age INT
 );
+
+CREATE TABLE courses (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    course_name VARCHAR(100) NOT NULL,
+    credit DECIMAL(3, 1),
+    dept_name VARCHAR(10) NOT NULL
+)
