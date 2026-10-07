@@ -43,4 +43,13 @@ CREATE TABLE enrollments (
 )
 
 DESCRIBE departments;
+DESCRIBE courses;
+DESCRIBE enrollments;
+SELECT * FROM departments;
 
+INSERT INTO departments (dept_id, dept_name)
+VALUES 
+(
+    1,
+    'CIS'
+)
