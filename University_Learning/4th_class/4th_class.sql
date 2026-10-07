@@ -32,4 +32,15 @@ CREATE TABLE teachers (
     experience INT
 );
 
+CREATE TABLE enrollments (
+    enroll_id INT PRIMARY KEY,
+    student_id VARCHAR(10),
+    course_id VARCHAR(10),
+    semester_id VARCHAR(10),
+    grade VARCHAR(5),
+    Foreign Key (student_id) REFERENCES students(student_id),
+    Foreign Key (course_id) REFERENCES courses(course_id)
+)
+
 DESCRIBE departments;
+
