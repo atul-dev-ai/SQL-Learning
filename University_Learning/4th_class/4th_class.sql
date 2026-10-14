@@ -78,3 +78,124 @@ VALUES
     "D04",
     "CSE"
 )
+
+SELECT * FROM students;
+DESCRIBE students;
+
+INSERT INTO students (student_id, student, department, gender, cgpa)
+VALUES
+(
+    'St01',
+    'Atul Paul',
+    'CIS',
+    'Male',
+    3.88
+),
+(
+    "St02",
+    "Aditiya Paul",
+    "CIS",
+    "Male",
+    4.00
+),
+(
+    "St03",
+    "Shams Mohsin",
+    "CIS",
+    "Male",
+    3.89
+),
+(
+    "St04",
+    "Shakira",
+    "CIS",
+    "Male",
+    3.34
+),
+(
+    "St05",
+    "Salman Moqtadir",
+    "SWE",
+    "Male",
+    3.55
+);
+
+DESCRIBE courses;
+INSERT INTO courses (course_id, course_name, credit, department, teacher)
+VALUES
+(
+    'c101',
+    'DBMS',
+    3,
+    'CIS',
+    'Ali'
+),
+(
+    "c102",
+    "DS",
+    3,
+    "SWE",
+    "Rahman"
+),
+(
+    "c103",
+    "E-Commerce",
+    3,
+    "CIS",
+    "Karim"
+),
+(
+    "c104",
+    "Khan",
+    3,
+    "EEE",
+    "Salman Moqtadir"
+);
+SELECT * FROM courses;
+
+DESCRIBE teachers;
+INSERT INTO teachers (teacher_id, teacher_name, department, salary, experience)
+VALUES
+(
+    "T101",
+    "Mehedi Hasan",
+    "CIS",
+    70000,
+    5
+),
+(
+    "T102",
+    "MD Israfil",
+    "CIS",
+    65000,
+    4
+),
+(
+    "T103",
+    "Ali",
+    "EEE",
+    85000,
+    9
+),
+(
+    "T104",
+    "Rahman",
+    "MCT",
+    62000,
+    4
+),
+(
+    "T105",
+    "Salman Khan",
+    "CSE",
+    50000,
+    3
+),
+(
+    "T106",
+    "Sifat",
+    "CSE",
+    99000,
+    15
+);
+SELECT * FROM teachers;
