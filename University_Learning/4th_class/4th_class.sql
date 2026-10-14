@@ -50,7 +50,31 @@ SELECT * FROM departments;
 INSERT INTO departments (dept_id, dept_name)
 VALUES 
 (
-    1,
-    'CIS'
+    "D01",
+    'SWE'
 )
 
+# change the data type
+
+ALTER TABLE departments
+MODIFY dept_id VARCHAR(20);
+DESCRIBE departments;
+SELECT * FROM departments;
+
+
+-- Delete rows from 'TableName' where condition is met
+DELETE FROM departments;
+INSERT INTO departments (dept_id, dept_name)
+VALUES 
+(
+    "D02",
+    'CIS'
+),
+(
+    "D03",
+    "EEE"
+),
+(
+    "D04",
+    "CSE"
+)
