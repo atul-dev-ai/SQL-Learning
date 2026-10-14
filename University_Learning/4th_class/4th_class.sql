@@ -199,3 +199,36 @@ VALUES
     15
 );
 SELECT * FROM teachers;
+
+DESCRIBE enrollments;
+INSERT INTO enrollments (enroll_id, student_id, course_id, semester_id, grade)
+VALUES
+(
+    1,
+    'St01',
+    'c101',
+    'Summer26',
+    'A'
+),
+(
+    2,
+    'St02',
+    'c102',
+    'Summer26',
+    'B+'
+),
+(
+    3,
+    'St03',
+    'c101',
+    'Summer26',
+    'A+'
+),
+(
+    4,
+    'St04',
+    'c101',
+    'Summer26',
+    'A'
+);
+SELECT * FROM enrollments;
