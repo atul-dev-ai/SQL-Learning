@@ -1,7 +1,7 @@
--- Active: 1787999216968@@127.0.0.1@3306@html5
+-- Active: 1787999216968@@127.0.0.1@3306@mysql
 SHOW DATABASES;
 
-CREATE DATABASE html5;
+CREATE DATABASE atul_cis;
 
 CREATE TABLE departments (
     dept_id INT PRIMARY KEY,
@@ -50,7 +50,7 @@ SELECT * FROM departments;
 INSERT INTO departments (dept_id, dept_name)
 VALUES 
 (
-    "D01",
+    1,
     'SWE'
 )
 
